@@ -2,23 +2,21 @@
 
 using namespace std;
 
-float sum(float a, float b );
-void introduction(string name, int age= 0);
+void celebrateBirthday( int* age);
 
 int main()
 {
-    cout << sum(2.8, 5) << endl;
-    introduction("Phil", 23);
-    introduction("Kenny");
+    int myAge = 23;
+    cout << "Before function age " << myAge << endl;
+    celebrateBirthday(&myAge);
+    cout << "After function age " << myAge << endl;
     system("pause>0");
     return 0;
 }
 
-float sum(float a, float b) {
-    return a + b;
-}
 
-void introduction(string name, int age) {
-    cout << "My name is " << name << endl;
-    cout << "I am " << age << "  years old. \n"<< endl;
+
+void celebrateBirthday( int* age) {
+  (*  age)++;
+    cout << "I am  celebrating my birthday at age" << *age <<endl;
 }
