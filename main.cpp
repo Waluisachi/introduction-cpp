@@ -2,25 +2,26 @@
 
 using namespace std;
 
-void celebrateBirthday( int* age);
+class Car {
+public:
+    string Color;
+    string Name;
+    double Price;
 
-int main()
-{
-    int luckyNumbers[5] = { 10 ,2, 9, 4, 8};
+};
+int main(){
+    Car myCar;
+    myCar.Name = "Ford Camaro";
+    myCar.Color = "Black";
+    myCar.Price = 8000000;
 
-    int * luckyPointer = luckyNumbers;
-
-    cout << "Pointing to address " << luckyPointer  <<  " value stored " << *luckyPointer<< endl;
-    luckyPointer++;
-    cout << "Pointing to address " << luckyPointer  <<  " value stored " << *luckyPointer<< endl;
-
+    cout << "Color" <<  myCar.Color ;
+    cout << "Name" <<  myCar.Name ;
+    cout << "Price" <<  myCar.Price << " $" ;
     system("pause>0");
     return 0;
 }
 
 
 
-void celebrateBirthday( int* age) {
-  (*  age)++;
-    cout << "I am  celebrating my birthday at age" << *age <<endl;
-}
+
