@@ -6,10 +6,14 @@ void celebrateBirthday( int* age);
 
 int main()
 {
-    int myAge = 23;
-    cout << "Before function age " << myAge << endl;
-    celebrateBirthday(&myAge);
-    cout << "After function age " << myAge << endl;
+    int luckyNumbers[5] = { 10 ,2, 9, 4, 8};
+
+    int * luckyPointer = luckyNumbers;
+
+    cout << "Pointing to address " << luckyPointer  <<  " value stored " << *luckyPointer<< endl;
+    luckyPointer++;
+    cout << "Pointing to address " << luckyPointer  <<  " value stored " << *luckyPointer<< endl;
+
     system("pause>0");
     return 0;
 }
