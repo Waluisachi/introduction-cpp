@@ -15,9 +15,9 @@ int main(){
     myCar.Color = "Black";
     myCar.Price = 8000000;
 
-    cout << "Color" <<  myCar.Color ;
-    cout << "Name" <<  myCar.Name ;
-    cout << "Price" <<  myCar.Price << " $" ;
+    cout << "Color" <<  myCar.Color  << endl;
+    cout << "Name" <<  myCar.Name  << endl;
+    cout << "Price" <<  myCar.Price << " $" << endl ;
     system("pause>0");
     return 0;
 }
