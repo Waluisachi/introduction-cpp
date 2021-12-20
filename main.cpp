@@ -2,32 +2,23 @@
 
 using namespace std;
 
+float sum(float a, float b );
+void introduction(string name, int age= 0);
+
 int main()
 {
-
- /* While loop */
-    int counter = 1;
-    cout << " While Loop" << endl;
-      while(counter <= 10) {
-        cout << counter << endl;
-        counter++;
-     }
- /* Do While Loop*/
-    cout << "Do While Loop" << endl;
-    int doWhileCounter = 1;
-     do {
-        cout << "The counter is: " << doWhileCounter << endl;
-        doWhileCounter++;
-     } while(doWhileCounter <= 10);
-
-     /*For  Loop */
-     cout << "For Loop" << endl;
-     string animals[5] = {  "Dog", "Cat", "Cow", "Bee", "Wolf" };
-
-     for(int i= 0; i < 5; i++){
-        cout << animals[i] << endl;
-     }
-
+    cout << sum(2.8, 5) << endl;
+    introduction("Phil", 23);
+    introduction("Kenny");
     system("pause>0");
     return 0;
+}
+
+float sum(float a, float b) {
+    return a + b;
+}
+
+void introduction(string name, int age) {
+    cout << "My name is " << name << endl;
+    cout << "I am " << age << "  years old. \n"<< endl;
 }
